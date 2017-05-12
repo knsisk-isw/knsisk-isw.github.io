@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+{% include head.html %}
+<body style="background: {{ page.colour }}" class="special">
+	<div class="header">
+		<div class="container">
+			{% include header.html %}
+		</div>
+	</div>
+	<div class="container topspaced">
+		<article class="post">
+			<div class="post-content">
+				{{ content }}
+			</div>
+		</article>
+
+	</div>
+
+	<div class="container footer">
+		{% include footer.html %}
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!-- Smooch do komunikacji -->
+<script src="https://cdn.smooch.io/smooch.min.js"></script>
+<script>
+    Smooch.init({
+        appToken: '43o5fkuzwtjyunwhom2jnd8c4',
+        givenName: 'Cool',
+        surname: 'Person',
+        customText: {
+            headerText: 'Jak możemy Ci pomóc?',
+            introductionText: 'Olaboga, nie wiemy czy jesteśmy gotowi, ale jeśli tylko nie jest środek nocy, czy niedziela, nie krępuj się i pisz! Chętnie odpowiemy na Twoje pytania.',
+            inputPlaceholder: 'Wprowadź wiadomość...',
+            sendButtonText: 'Wyślij',
+            introAppText: 'Jeśli chcesz uciec ze strony, ale pozostać w kontakcie, zawsze możesz użyć też Messengera.',
+        }
+    });
+</script>
+
+<!-- jQuery -->
+<script type="text/javascript" src="/vendor/js/jquery.min.js"></script>
+<script type="text/javascript" src="/vendor/js/jquery.rotate.js"></script>
+
+<!-- Materialize -->
+<script type="text/javascript" src="/vendor/js/materialize.min.js"></script>
+
+<!-- Velocity -->
+<script type="text/javascript" src="/vendor/js/velocity.min.js"></script>
+<script type="text/javascript" src="/vendor/js/velocity.ui.min.js"></script>
+
+<!-- ScrollReveal -->
+<script type="text/javascript" src="/vendor/js/scrollreveal.min.js"></script>
+
+<!-- Facebook -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.8&appId=1592270771078842";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- A na koniec, nasze skrypty -->
+<script type="text/javascript" src="/js/app.js"></script>

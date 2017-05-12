@@ -1,0 +1,31 @@
+{
+  "name": "sisk.kssk.pwr.edu.pl",
+  "version": "1.0.0",
+  "description": "> **Quickstart**: Jeśli tylko w systemie jest interpreter _Ruby_ i _npm_, komenda `make init` zainstaluje _Jekylla_, wszystkie potrzebne paczki z _npm_ i z _bowera_. Serwer można odpalić używając komendy `grunt -v`.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kn-sisk/kn-sisk.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kn-sisk/kn-sisk.github.io/issues"
+  },
+  "homepage": "https://github.com/kn-sisk/kn-sisk.github.io#readme",
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "grunt": "^1.0.1",
+    "grunt-bower-task": "^0.4.0",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-exec": "^1.0.1",
+    "grunt-shell": "^2.0.0"
+  }
+}
