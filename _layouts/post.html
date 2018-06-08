@@ -5,16 +5,16 @@ layout: default
 <div class="pageHeader white {{page.color}}-text">
   <div class="container">
   <a href="/"><div class="{{page.color}} sisklines"></div></a>
-    <h1 class="revealSlow">{{ page.title }}</h1>
+    <h1 class=" ">{{ page.title }}</h1>
     {% if page.subtitle %}
-      <h5 class="revealSlow">{{ page.subtitle }}</h4>
+      <h5 class=" ">{{ page.subtitle }}</h4>
     {% endif %}
     {% if page.overdate %}
-      <h5 class="revealSlow {{page.color}}-text text-lighten-4"> {{ page.overdate }}</h5>
+      <h5 class="  {{page.color}}-text text-lighten-4"> {{ page.overdate }}</h5>
     {% else %}
-      <h5 class="revealSlow {{page.color}}-text text-lighten-4"> {{ page.date | date: '%B %d, %Y' }}</h5>
+      <h5 class="  {{page.color}}-text text-lighten-4"> {{ page.date | date: '%B %d, %Y' }}</h5>
     {% endif %}
-    <p class="flow-text revealSlow {{page.color}}-text text-lighten-2">{{ page.description }}</p>
+    <p class="flow-text   {{page.color}}-text text-lighten-2">{{ page.description }}</p>
   </div>
 </div>
 
