@@ -1,11 +1,11 @@
-@font-face {
+/* @font-face {
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
   src: local('Material Icons'),
        local('MaterialIcons-Regular'),
        url('../fonts/materialIcons/MaterialIcons-Regular.woff') format('woff')
-}
+} */
 
 .pageHeader {
   padding: 8rem 0 0rem 0;
