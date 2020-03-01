@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+  
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="{{ "/css/normalize.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/skeleton.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/list.css" | prepend: site.baseurl }}">
+  
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <h1 class="post-title" style="margin-top:3rem">{{ page.title }}</h1>	
+        <h2>{{ page.subtitle }}</h2>
+
+        <table class="u-full-width">
+          <thead>
+            <tr>
+              {% for column in page.columns %}
+                <th>{{ column }}</th>
+              {% endfor %}
+            </tr>
+          </thead>
+          <tbody>
+            {% assign sorted_members = (site.data[page.dataset] | sort: page.sortby ) %}
+            {% for member in sorted_members %}
+            <tr>
+              {% for column in page.columns %}
+                <td>{{ member[column] }}</td>
+              {% endfor %}
+            </tr>
+          {% endfor %}
+          {% for nothing in (1..page.emptyLines) %}
+          <tr><td>&nbsp;</td><td></td><td></td><td></td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</body>
+</html>
